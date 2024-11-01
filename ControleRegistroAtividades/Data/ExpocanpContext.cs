@@ -5,7 +5,7 @@ namespace ControleRegistroAtividades.Data
 {
     public class ExpocanpContext : DbContext
     {
-        public ExpocanpContext(DbContextOptions options) : base(options)
+        public ExpocanpContext(DbContextOptions<ExpocanpContext> options) : base(options)
         {
         }
         public DbSet<Sala> Salas { get; set; }
